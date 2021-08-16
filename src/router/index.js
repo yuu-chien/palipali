@@ -7,7 +7,12 @@ const routes = [
   {
     // 當使用者輸入不存在頁面時，可以導向首頁
     path: '*',
-    redirect: '/palipali/index',
+    redirect: '/palipali',
+  },
+  {
+    path: '/guideline',
+    name: 'guideline',
+    component: () => import('../views/Guideline.vue'),
   },
   // {
   //   path: '',
