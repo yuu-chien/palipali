@@ -11,7 +11,6 @@ import 'aos/dist/aos.css';
 import 'vue-loading-overlay/dist/vue-loading.css';
 import { ValidationProvider } from 'vee-validate';
 import App from './App.vue';
-import thousandsFilter from './assets/filter/thousands';
 import router from './router';
 
 Vue.config.productionTip = false;
@@ -24,7 +23,6 @@ Vue.use(AOS);
 Vue.component('Loading', Loading);
 Vue.component('Swiper', Swiper);
 Vue.component('ValidationProvider', ValidationProvider);
-Vue.filter('thousands', thousandsFilter);
 
 new Vue({
   router,
